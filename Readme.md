@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Program.cs](./CS/PDFPasswordProtection/Program.cs) (VB: [Program.vb](./VB/PDFPasswordProtection/Program.vb))
+<!-- default file list end -->
 # How to protect a PDF document with a password
 
 
