@@ -5,7 +5,7 @@ Namespace PDFPasswordProtection
     Friend Class Program
 
         Shared Sub Main(ByVal args As String())
-            Using pdfDocumentProcessor As DevExpress.Pdf.PdfDocumentProcessor = New DevExpress.Pdf.PdfDocumentProcessor()
+            Using pdfDocumentProcessor As New PdfDocumentProcessor()
                 ' Load a PDF document.
                 pdfDocumentProcessor.LoadDocument("..\..\Demo.pdf")
                 ' Specify printing, data extraction, modification, and interactivity permissions. 

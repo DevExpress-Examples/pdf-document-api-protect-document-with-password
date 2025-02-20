@@ -1,4 +1,5 @@
 ﻿using DevExpress.Pdf;
+using System.Diagnostics;
 
 namespace PDFPasswordProtection {
     class Program {
@@ -7,7 +8,7 @@ namespace PDFPasswordProtection {
             using (PdfDocumentProcessor pdfDocumentProcessor = new PdfDocumentProcessor()) {
 
                 // Load a PDF document.
-                pdfDocumentProcessor.LoadDocument("..\\..\\Demo.pdf");
+                pdfDocumentProcessor.LoadDocument("..\\..\\..\\Demo.pdf");
 
                 // Specify printing, data extraction, modification, and interactivity permissions. 
                 PdfEncryptionOptions encryptionOptions = new PdfEncryptionOptions();
@@ -24,8 +25,9 @@ namespace PDFPasswordProtection {
                 encryptionOptions.Algorithm = PdfEncryptionAlgorithm.AES256;
 
                 // Save the protected document with encryption settings.  
-                pdfDocumentProcessor.SaveDocument("..\\..\\ProtectedDocument.pdf", new PdfSaveOptions() { EncryptionOptions = encryptionOptions });
+                pdfDocumentProcessor.SaveDocument("..\\..\\..\\ProtectedDocument.pdf", new PdfSaveOptions() { EncryptionOptions = encryptionOptions });
             }
+            Process.Start(new ProcessStartInfo("..\\..\\..\\ProtectedDocument.pdf") { UseShellExecute = true });
         }
     }
 }

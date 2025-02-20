@@ -7,11 +7,13 @@
 
 # PDF Document API - Protect a PDF Document with a Password
 
-This example shows how a PDF document can be protected using both the owner and user passwords.<br><br>A user password is used to protect opening a document. After a document is opened with the user password, a user has access to the document with the specified permissions.
+This example shows how a PDF document can be protected using both the owner and user passwords.
+
+A user password is used to protect opening a document. After a document is opened with the user password, a user has access to the document with the specified permissions.
 To get full access to the document (permissions are not taken into account in this case), this document must be opened with the owner's password.
 
-The Universal Subscription or an additional Office File API Subscription is required to use this example in production code. Please refer to the [DevExpress Subscription](https://www.devexpress.com/Subscriptions/) page for pricing information.
-
+> [!IMPORTANT]
+> The Universal Subscription or an additional Office File API Subscription is required to use this example in production code. Please refer to the [DevExpress Subscription](https://www.devexpress.com/Subscriptions/) page for pricing information.
 
 # Files to Review
 
@@ -20,8 +22,6 @@ The Universal Subscription or an additional Office File API Subscription is requ
 # Documentation
 
 * [Protection in PDF Documents](https://docs.devexpress.com/OfficeFileAPI/114517/pdf-document-api/document-security/document-protection)
-
-
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
